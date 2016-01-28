@@ -1,0 +1,136 @@
+[{
+    "id": "yk_electric_mill",
+    "type": "TOOL",
+    "symbol": ":",
+    "color": "light_gray",
+    "name": "electric mill",
+    "description": "This is an electric mill for grinding grain.",
+    "price": 8900,
+    "material": "steel",
+    "weight": 13381,
+    "volume": 8,
+    "bashing": 9,
+    "to_hit": -6,
+    "max_charges": 200,
+    "initial_charges": 100,
+    "charges_per_use": 5,
+    "turns_per_charge": 0,
+    "ammo": "battery",
+    "revert_to": "null"
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{ 
+    "type" : "recipe",
+    "result": "yk_electric_mill",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skills_required": [["cooking", 2] ],
+    "skill_used": "mechanics",
+    "difficulty": 5,
+    "time": 45000,
+    "reversible": true,
+    "autolearn": true,
+    "qualities":[
+	{"id":"HAMMER","level":2,"amount":1},
+	{"id":"SAW_M","level":1,"amount":1}
+    ],
+    "tools": [
+	[ [ "goggles_welding", -1 ] ],
+	[
+	    [ "welder", 50 ],
+	    [ "welder_crude", 75 ],
+	    [ "toolset", 75 ],
+	    [ "oxy_torch", 5]
+	]
+    ],
+    "components": [
+	[ ["scrap", 8], ["steel_chunk", 3] ],
+	[ [ "sheet_metal", 1 ] ],
+	[ [ "motor", 1 ] ]
+    ]
+},{
+    "type" : "recipe",
+    "result": "flour",
+    "id_suffix": "yk_by_electric_mill",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_OTHER",
+    "skills_required": [["mechanics", 1]],
+    "skill_used": "cooking",
+    "difficulty": 1,
+    "time": 5000,
+    "reversible": false,
+    "autolearn": true,
+    "tools": [ [["yk_electric_mill", 10] ]],
+    "components": [ [ ["wheat", 2], ["buckwheat", 2], ["barley", 2], ["acorns_cooked", 2], ["oats", 2], ["starch", 2], ["dry_rice", 6] ] ]
+},{
+    "type" : "recipe",
+    "result": "oatmeal",
+    "id_suffix": "yk_by_electric_mill",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_OTHER",
+    "skills_required": [["mechanics", 1]],
+    "skill_used": "cooking",
+    "difficulty": 1,
+    "time": 5000,
+    "reversible": false,
+    "autolearn": true,
+    "tools": [ [[ "hotplate", 5 ], [ "char_smoker", 1 ], [ "toolset", 5 ], [ "fire", -1 ] ],
+	       [["yk_electric_mill", 10] ]],
+    "components": [ [ ["oats", 2] ] ]
+},{
+    "type" : "recipe",
+    "result": "cornmeal",
+    "id_suffix": "yk_by_electric_mill",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_OTHER",
+    "skills_required": [["mechanics", 1]],
+    "skill_used": "cooking",
+    "difficulty": 1,
+    "time": 5000,
+    "reversible": false,
+    "autolearn": true,
+    "tools": [ [[ "hotplate", 5 ], [ "char_smoker", 1 ], [ "toolset", 5 ], [ "fire", -1 ] ],
+	       [["yk_electric_mill", 10] ]],
+    "components": [ [ ["corn", 2], ["irradiated_corn", 2] ] ]
+},{
+    "type" : "recipe",
+    "result": "meal_bone",
+    "id_suffix": "yk_by_electric_mill",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_OTHER",
+    "skills_required": [["mechanics", 1]],
+    "skill_used": "cooking",
+    "difficulty": 1,
+    "time": 5000,
+    "reversible": false,
+    "autolearn": true,
+    "tools": [ [["yk_electric_mill", 10] ]],
+    "components": [ [ ["bone", 1], ["bone_human", 1] ] ]
+},{
+    "type" : "recipe",
+    "result": "meal_bone_tainted",
+    "id_suffix": "yk_by_electric_mill",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_OTHER",
+    "skills_required": [["mechanics", 1]],
+    "skill_used": "cooking",
+    "difficulty": 1,
+    "time": 5000,
+    "reversible": false,
+    "autolearn": true,
+    "tools": [ [["yk_electric_mill", 10] ]],
+    "components": [ [ ["bone_tainted", 1] ] ]
+}]

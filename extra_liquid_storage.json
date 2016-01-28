@@ -1,0 +1,100 @@
+[{
+    "id": "yk_marged_plastic_bottle",
+    "type": "CONTAINER",
+    "symbol": ")",
+    "color": "yellow",
+    "name": "marged plastic bottle",
+    "category": "other",
+    "description": "some bottles inside.",
+    "price": 0,
+    "weight": 1428,
+    "volume": 20,
+    "bashing": 2,
+    "to_hit": -6,
+    "contains": 35,
+    "material": "plastic",
+    "rigid": true,
+    "watertight": true,
+    "seals": true
+},{
+    "id": "yk_glass_liquid_storage",
+    "type": "CONTAINER",
+    "symbol": ")",
+    "color": "light_cyan",
+    "name": "glass liquid storeage",
+    "category": "other",
+    "description": "A liquid storage.",
+    "price": 0,
+    "weight": 33259,
+    "volume": 40,
+    "bashing": 6,
+    "to_hit": -9,
+    "contains": 120,
+    "material": "glass",
+    "rigid": true,
+    "watertight": true,
+    "seals": true
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{ 
+    "type" : "recipe",
+    "result": "yk_marged_plastic_bottle",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_CONTAINERS",
+    "skill_used": "fabrication",
+    "skills_required": [["survival", 2]],
+    "difficulty": 2,
+    "time": 10000,
+    "reversible": false,
+    "autolearn": true,
+    "qualities": [
+	{"id":"CUT", "level":1, "amount":1}
+    ],
+    "components": [
+	[["bottle_plastic_small", 36],["bottle_plastic", 18],["jug_plastic", 3] ],
+	[["string_36", 1], ["string_6", 6], ["rag", 4], ["leather", 4] ],
+	[["duct_tape", 25], ["superglue", 1] ]
+    ]
+},{
+    "type" : "recipe",
+    "result": "yk_glass_liquid_storage",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_CONTAINERS",
+    "skill_used": "fabrication",
+    "difficulty": 7,
+    "time": 160000,
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [["glassblowing_book", 6]],
+    "tools": [
+	[["tongs", -1] ],
+	[["chisel", -1] ],
+	[["pipe", -1] ],
+	[["crucible", -1], ["crucible_clay", -1] ],
+	[["forge", 400], ["char_forge", 100] ]
+    ],
+    "components": [
+	[
+	    ["glass_shard", 480],
+	    ["flask_glass", 120],
+	    ["jar_glass", 60], 
+	    ["bottle_glass", 40],
+            ["jar_3l_glass", 10]
+	]
+    ]
+}]

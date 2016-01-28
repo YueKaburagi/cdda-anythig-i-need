@@ -1,0 +1,219 @@
+[{
+    "id": "yk_smoke_unit",
+    "name": "folded smoking unit",
+    "type": "GENERIC",
+    "symbol": ":",
+    "color": "brown",
+    "description": "This is a folding smoke unit box.",
+    "price": 30,
+    "material": "wood",
+    "weight": 248,
+    "volume": 1,
+    "bashing": -2,
+    "to_hit": -1
+},{
+    "id": "yk_smoke_unit_smoking",
+    "name": "fired smoking unit(meat)",
+    "type": "GENERIC",
+    "symbol": ":",
+    "color": "brown",
+    "description": "This is a smoke unit box. It is smoking now.",
+    "price": 130,
+    "material": "wood",
+    "weight": 1186,
+    "volume": 3,
+    "bashing": -2,
+    "to_hit": -1,
+    "use_action": {
+	"type": "delayed_transform",
+	"transform_age": 6000, "//": "10 hours",
+	"not_ready_msg": "Smoking now!",
+	"msg": "You open smoke unit and harvest smoked meats",
+	"moves": 50,
+	"container": "yk_smoke_unit_finished",
+	"target": "meat_smoked",
+	"target_charges": 3
+    }
+},{
+    "id": "yk_smoke_unit_smoking_human",
+    "name": "fired smoking unit(human flesh)",
+    "type": "GENERIC",
+    "symbol": ":",
+    "color": "brown",
+    "description": "This is a smoke unit box. It is smoking now.",
+    "price": 130,
+    "material": "wood",
+    "weight": 1186,
+    "volume": 3,
+    "bashing": -2,
+    "to_hit": -1,
+    "use_action": {
+	"type": "delayed_transform",
+	"transform_age": 6000, "//": "10 hours",
+	"not_ready_msg": "Smoking now!",
+	"msg": "You open smoke unit and harvest smoked sucker",
+	"moves": 50,
+	"container": "yk_smoke_unit_finished",
+	"target": "human_smoked",
+	"target_charges": 3
+    }
+},{
+    "id": "yk_smoke_unit_smoking_fish",
+    "name": "fired smoking unit(fish)",
+    "type": "GENERIC",
+    "symbol": ":",
+    "color": "brown",
+    "description": "This is a smoke unit box. It is smoking now.",
+    "price": 130,
+    "material": "wood",
+    "weight": 1186,
+    "volume": 3,
+    "bashing": -2,
+    "to_hit": -1,
+    "use_action": {
+	"type": "delayed_transform",
+	"transform_age": 6000, "//": "10 hours",
+	"not_ready_msg": "Smoking now!",
+	"msg": "You open smoke unit and harvest smoked fish",
+	"moves": 50,
+	"container": "yk_smoke_unit_finished",
+	"target": "fish_smoked",
+	"target_charges": 6
+    }
+},{
+    "id": "yk_smoke_unit_finished",
+    "name": "smoking unit",
+    "type": "CONTAINER",
+    "symbol": ":",
+    "color": "brown",
+    "description": "This is a smoke unit box. Smokes complete!",
+    "price": 140,
+    "material": "wood",
+    "weight": 248,
+    "volume": 3,
+    "bashing": -2,
+    "to_hit": -1,
+    "contains": 3,
+    "rigid": true,
+    "use_action": {
+	"type": "transform",
+	"msg": "You fold smoke unit.",
+	"target": "yk_smoke_unit"
+    }
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    "type" : "recipe",
+    "result": "yk_smoke_unit",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skills_required": [["cooking", 1] ],
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 6000,
+    "reversible": false,
+    "autolearn": true,
+    "qualities":[
+	{"id":"CUT","level":1,"amount":1}
+    ],
+    "components": [
+	[["2x4", 2], ["stick", 2], ["box_small", 1] ],
+	[["string_36", 2], ["duct_tape", 20], ["rag", 4], ["leather", 4] ]
+    ]
+},{
+    "type" : "recipe",
+    "result": "yk_smoke_unit_smoking",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_MEAT",
+    "skill_used": "cooking",
+    "difficulty": 3,
+    "time": 3000,
+    "reversible": false,
+    "autolearn": true,
+    "qualities": [
+	{"id":"COOK","level":1,"amount":1}
+    ],
+    "tools": [
+	[["lighter", 1], ["crude_firestarter", 1], ["matches", 1], ["ref_lighter", 1] ]
+    ],
+    "components": [
+	[["yk_smoke_unit", 1], ["yk_smoke_unit_finished", 1] ],
+	[["charcoal", 2] ],
+	[["meat", 3] ],
+	[["skewer", 3], ["skewer_bone", 3] ]
+    ]
+},{
+    "type" : "recipe",
+    "result": "yk_smoke_unit_smoking_human",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_MEAT",
+    "skill_used": "cooking",
+    "difficulty": 3,
+    "time": 3000,
+    "reversible": false,
+    "autolearn": true,
+    "qualities": [
+	{"id":"COOK","level":1,"amount":1}
+    ],
+    "tools": [
+	[["lighter", 1], ["crude_firestarter", 1], ["matches", 1], ["ref_lighter", 1] ]
+    ],
+    "components": [
+	[["yk_smoke_unit", 1], ["yk_smoke_unit_finished", 1] ],
+	[["charcoal", 2] ],
+	[["human_flesh", 3] ],
+	[["skewer", 3], ["skewer_bone", 3] ]
+    ]
+},{
+    "type" : "recipe",
+    "result": "yk_smoke_unit_smoking_fish",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_MEAT",
+    "skill_used": "cooking",
+    "difficulty": 3,
+    "time": 3000,
+    "reversible": false,
+    "autolearn": true,
+    "qualities": [
+	{"id":"COOK","level":1,"amount":1}
+    ],
+    "tools": [
+	[["lighter", 1], ["crude_firestarter", 1], ["matches", 1], ["ref_lighter", 1] ]
+    ],
+    "components": [
+	[["yk_smoke_unit", 1], ["yk_smoke_unit_finished", 1] ],
+	[["charcoal", 2] ],
+	[["fish", 6] ],
+	[["skewer", 3], ["skewer_bone", 3] ]
+    ]
+}]

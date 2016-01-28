@@ -1,0 +1,13 @@
+[{
+  "type" : "recipe",
+  "result": "pot_copper",
+  "id_suffix": "yk_uncraft",
+  "category": "CC_NONCRAFT",
+  "subcategory": "CSC_NONCRAFT",
+  "difficulty": 0,
+  "time": 12000,
+  "reversible": true,
+  "autolearn": false,
+    "qualities": [{"id":"HAMMER","level":2,"amount":1}],
+  "components": [ [[ "scrap_copper", 5 ] ]]
+}]

@@ -1,0 +1,355 @@
+[{
+    "id": "yk_witch_caldron",
+    "name": "witch's caldron",
+    "type": "TOOL",
+    "symbol": "(",
+    "color": "dark_gray",
+    "description": "A witch's caldron. Magic = Alchemy = Cooking!",
+    "price": 10000,
+    "material": "steel",
+    "weight": 10042,
+    "volume": 40,
+    "bashing": 36,
+    "to_hit": -25,
+    "ammo": "water",
+    "max_charges": 40,
+    "initial_charges": 0,
+    "charges_per_use": 0,
+    "turns_per_charge": 0,
+    "qualities": [["COOK", 1], ["CHEM", 2]],
+    "revert_to": "null"
+},
+
+
+
+
+
+{ 
+    "type" : "recipe",
+    "result": "yk_witch_caldron",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": 180000,
+    "reversible": false,
+    "autolearn": true,
+    "qualities":[
+	{"id":"HAMMER","level":1,"amount":1},
+	{"id":"DIG","level":1,"amount":1}
+    ],
+    "tools": [
+	[["crucible", -1], ["crucible_clay", -1] ],
+	[["forge", 100], ["char_forge", 20], ["oxy_torch", 20] ]
+    ],
+    "components": [
+	[["scrap", 96], ["steel_chunk", 32], ["steel_lump", 8] ]
+    ]
+},
+
+{
+    "type" : "recipe",
+    "result": "tallow_tainted",
+    "id_suffix": "yk_through_caldron",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_OTHER",
+    "skill_used": "cooking",
+    "difficulty": 3,
+    "time": 20000,
+    "reversible": false,
+    "autolearn": true,
+    "batch_time_factors": [75, 1],
+    "qualities" : [
+	{"id":"CUT","level":1,"amount":1},
+	{"id":"COOK","level":2,"amount":1}
+    ],
+    "tools": [
+	[
+	    [ "hotplate", 7 ],      [ "toolset", 7 ],
+	    [ "char_smoker", 1 ], [ "fire", -1 ]
+	],
+	[["yk_witch_caldron", 1] ]
+    ],
+    "components": [
+	[
+	    [ "fat_tainted", 4 ]
+	]
+    ]
+},{
+    "type": "recipe",
+    "result": "lamp_oil",
+    "id_suffix": "yk_through_caldron",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_OTHER",
+    "skill_used": "cooking",
+    "difficulty": 3,
+    "time": 40000,
+    "reversible": false,
+    "autolearn": true,
+    "batch_time_factors": [75, 1],
+    "qualities" : [
+	{"id":"CUT","level":1,"amount":1},
+	{"id":"COOK","level":3,"amount":1}
+    ], "tools": [
+	[
+	    [ "hotplate", 7 ],
+	    [ "toolset", 7 ],
+	    [ "char_smoker", 1 ],
+	    [ "fire", -1 ]
+	],
+	[["yk_witch_caldron", 1] ]
+    ],
+    "components": [
+	[
+	    [ "tallow", 2 ],
+	    [ "tallow_tainted", 2 ],
+	    [ "lard", 2 ],
+	    [ "cooking_oil", 5 ]
+	]
+    ]
+},{
+    "type" : "recipe",
+    "result": "gasoline",
+    "id_suffix": "yk_through_caldron",
+    "byproducts": ["diesel", "lamp_oil"],
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_CHEMICALS",
+    "skill_used": "cooking",
+    "difficulty": 7,
+    "time": 54000,
+    "reversible": false,
+    "autolearn": true,
+    "batch_time_factors": [75, 1],
+    "tools": [
+	[[ "chemistry_set", 50 ] ],
+	[["yk_witch_caldron", 1] ]
+    ],
+    "components": [
+	[ [ "plant_sac", 10 ], [ "veggy", 6 ] ],
+	[ [ "lye_powder", 5 ] ]
+    ]
+},{
+    "type" : "recipe",
+    "result": "ammonia",
+    "id_suffix": "yk_through_caldron",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_CHEMICALS",
+    "skill_used": "cooking",
+    "difficulty": 7,
+    "time": 54000,
+    "reversible": false,
+    "autolearn": true,
+    "batch_time_factors": [75, 1],
+    "tools": [
+	[
+	    [ "chemistry_set", 50 ]
+	],
+	[["yk_witch_caldron", 1] ]
+    ],
+    "components": [
+	[
+	    [ "scrap", 1 ]
+	],
+	[
+	    [ "charcoal", 1 ],
+	    [ "lye_powder", 20 ]
+	]
+    ]
+},{
+    "type" : "recipe",
+    "result": "lye_powder",
+    "id_suffix": "yk_through_caldron",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_CHEMICALS",
+    "skill_used": "cooking",
+    "difficulty": 5,
+    "time": 180000,
+    "reversible": false,
+    "autolearn": true,
+    "batch_time_factors": [90, 1],
+    "qualities":[
+	{"id":"CHEM","level":1,"amount":1}
+    ], "tools": [
+	[
+	    [ "char_smoker", 3 ],
+	    [ "hotplate", 25 ],
+	    [ "toolset", 25 ],
+	    [ "fire", -1 ]
+	],
+	[["yk_witch_caldron", 1] ]
+    ],
+    "components": [
+	[
+	    [ "charcoal", 10 ]
+	]
+    ]
+},{
+  "type" : "recipe",
+  "result": "bleach",
+    "id_suffix": "yk_through_caldron",
+  "category": "CC_CHEM",
+  "subcategory": "CSC_CHEM_CHEMICALS",
+  "skill_used": "cooking",
+  "difficulty": 7,
+  "time": 36000,
+  "reversible": false,
+  "autolearn": true,
+    "batch_time_factors": [75, 1],
+  "tools": [
+    [
+	[ "chemistry_set", 50 ]
+    ],
+      [["yk_witch_caldron", -1] ]
+  ],
+  "components": [
+    [
+      [ "salt_water", 2 ],
+      [ "saline", 10 ]
+    ]
+  ]
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    "type" : "recipe",
+    "result": "salt",
+    "id_suffix": "chem_yk_through_caldron",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_OTHER",
+    "skill_used": "cooking",
+    "difficulty": 7,
+    "time": 72000,
+    "reversible": false,
+    "autolearn": true,
+    "batch_time_factors": [75, 1],
+    "qualities":[
+	{"id":"CHEM","level":2,"amount":1}
+    ],
+    "tools": [
+	[
+	    [ "hotplate", 50 ],
+	    [ "toolset", 50 ],
+	    [ "fire", -1 ],
+	    [ "char_smoker", 5 ]
+	],
+	[["yk_witch_caldron", 1] ]
+    ],
+    "components": [
+	[
+	    [ "lye_powder", 100 ],
+	    [ "bleach", 2 ]
+	]
+    ]
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    "type" : "COMESTIBLE",
+    "id" : "yk_magnitude_drink",
+    "name" : "magnitude dream",
+    "description" : "",
+    "symbol" : "~",
+    "color" : "pink",
+    "container" : "bottle_glass",
+    "comestible_type" : "DRINK",
+    "quench" : 13,
+    "nutrition" : 1,
+    "healthy" : 1,
+    "fun" : 36,
+    "spoils_in" : 0,
+    "addiction_type" : "alcohol",
+    "addiction_potential" : 47,
+    "stim" : -1,
+    "price" : 16900,
+    "tool" : "null",
+    "weight" : 36,
+    "volume" : 1,
+    "phase" : "liquid",
+    "material" : ["alcohol", "water"],
+    "cutting" : 0,
+    "charges" : 13,
+    "bashing" : 0,
+    "to_hit" : 0,
+    "flags": ["EATEN_COLD"],
+    "use_action" : "ALCOHOL"
+},{
+    "type" : "recipe",
+    "result": "yk_magnitude_drink",
+    "byproducts": {"id": "chem_ethanol", "charges_mult": 1},
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_DRINKS",
+    "skill_used": "cooking",
+    "difficulty": 6,
+    "time": 30000,
+    "reversible": false,
+    "autolearn": true,
+    "batch_time_factors": [70, 1],
+    "qualities": [
+	{"id":"COOK","level":2,"amount":1},
+	{"id":"CONTAIN","level":1,"amount":2},
+	{"id":"BREW","level":2,"amount":1}
+    ],
+    "tools": [
+	[
+	    [ "hotplate", 12 ], [ "char_smoker", 1 ], [ "toolset", 12 ], [ "fire", -1 ]
+	],
+	[["yk_witch_caldron", 1]]
+    ],
+    "components": [
+	[["beer", 2], ["hb_beer", 2] ],
+	[["european_pilsner",1]],
+	[["pale_ale", 1]],
+	[["india_pale_ale", 1]],
+	[["stout", 1]],
+	[["belgian_ale", 1]],
+	[["imperial_stout", 1]],
+	[["rootbeer", 1]],
+	[["whiskey", 2], ["single_malt_whiskey", 2]],
+	[["vodka", 2]],
+	[["rum", 2]],
+	[["tequila", 1]],
+	[["gin", 1 ]],
+	[["brandy", 1]],
+	[["triple_sec", 1]],
+	[["wine_riesling", 1]],
+	[["wine_chardonnay", 1]],
+	[["wine_cabernet", 1]],
+	[["wine_noir", 1]],
+	[["bum_wine", 2]], 
+	[["dandelion_wine", 1], ["pine_wine", 1]],
+	[["fruit_wine", 1]],
+	[["irish_coffee", 1]],
+	[["drink_strawberry_surprise", 1]],
+	[["drink_boozeberry", 1]],
+	[["drink_screwdriver", 1]],
+	[["drink_wild_apple", 1]],
+	[["drink_rumcola", 1], ["long_island", 1]]
+    ]
+}]
