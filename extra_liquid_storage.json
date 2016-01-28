@@ -5,7 +5,7 @@
     "color": "yellow",
     "name": "marged plastic bottle",
     "category": "other",
-    "description": "some bottles inside.",
+    "description": "プラスチック容器を捏ね回したら、不思議な力で見た目より沢山の液体を入れられるようになりました。",
     "price": 0,
     "weight": 1428,
     "volume": 20,
@@ -21,7 +21,7 @@
     "type": "CONTAINER",
     "symbol": ")",
     "color": "light_cyan",
-    "name": "glass liquid storeage",
+    "name": "ガラスを溶かして不思議な力で形成したら、見た目の倍以上の液体を入れられるようになりました。",
     "category": "other",
     "description": "A liquid storage.",
     "price": 0,
@@ -35,6 +35,7 @@
     "watertight": true,
     "seals": true
 },
+
 
 
 
