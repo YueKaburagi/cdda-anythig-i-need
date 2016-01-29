@@ -4,16 +4,16 @@
     "symbol": ":",
     "color": "light_gray",
     "name": "electric mill",
-    "description": "This is an electric mill for grinding grain.",
+    "description": "電池で動作する臼です。機械の使い方さえわかるのなら、石臼を回すより遥かに速く穀粉を作ることができます。",
     "price": 8900,
     "material": "steel",
     "weight": 13381,
     "volume": 8,
     "bashing": 9,
     "to_hit": -6,
-    "max_charges": 200,
-    "initial_charges": 100,
-    "charges_per_use": 5,
+    "max_charges": 400,
+    "initial_charges": 200,
+    "charges_per_use": 0,
     "turns_per_charge": 0,
     "ammo": "battery",
     "revert_to": "null"
@@ -73,7 +73,7 @@
     "time": 5000,
     "reversible": false,
     "autolearn": true,
-    "tools": [ [["yk_electric_mill", 10] ]],
+    "tools": [ [["yk_electric_mill", 20] ]],
     "components": [ [ ["wheat", 2], ["buckwheat", 2], ["barley", 2], ["acorns_cooked", 2], ["oats", 2], ["starch", 2], ["dry_rice", 6] ] ]
 },{
     "type" : "recipe",
@@ -88,7 +88,7 @@
     "reversible": false,
     "autolearn": true,
     "tools": [ [[ "hotplate", 5 ], [ "char_smoker", 1 ], [ "toolset", 5 ], [ "fire", -1 ] ],
-	       [["yk_electric_mill", 10] ]],
+	       [["yk_electric_mill", 20] ]],
     "components": [ [ ["oats", 2] ] ]
 },{
     "type" : "recipe",
@@ -103,7 +103,7 @@
     "reversible": false,
     "autolearn": true,
     "tools": [ [[ "hotplate", 5 ], [ "char_smoker", 1 ], [ "toolset", 5 ], [ "fire", -1 ] ],
-	       [["yk_electric_mill", 10] ]],
+	       [["yk_electric_mill", 20] ]],
     "components": [ [ ["corn", 2], ["irradiated_corn", 2] ] ]
 },{
     "type" : "recipe",
@@ -117,7 +117,7 @@
     "time": 5000,
     "reversible": false,
     "autolearn": true,
-    "tools": [ [["yk_electric_mill", 10] ]],
+    "tools": [ [["yk_electric_mill", 20] ]],
     "components": [ [ ["bone", 1], ["bone_human", 1] ] ]
 },{
     "type" : "recipe",
@@ -131,6 +131,6 @@
     "time": 5000,
     "reversible": false,
     "autolearn": true,
-    "tools": [ [["yk_electric_mill", 10] ]],
+    "tools": [ [["yk_electric_mill", 20] ]],
     "components": [ [ ["bone_tainted", 1] ] ]
 }]
