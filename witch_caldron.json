@@ -18,13 +18,7 @@
     "turns_per_charge": 0,
     "qualities": [["COOK", 1], ["CHEM", 2]],
     "revert_to": "null"
-},
-
-
-
-
-
-{ 
+},{ 
     "type" : "recipe",
     "result": "yk_witch_caldron",
     "category": "CC_OTHER",
@@ -47,7 +41,12 @@
     ]
 },
 
+
+
+
+
 {
+    "//": "################################### chem recipes ###################################",
     "type" : "recipe",
     "result": "tallow_tainted",
     "id_suffix": "yk_through_caldron",
@@ -213,16 +212,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
 {
+    "//": "################################### food recipes ###################################",
     "type" : "recipe",
     "result": "salt",
     "id_suffix": "chem_yk_through_caldron",
@@ -258,19 +249,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 {
+    "//": "################################### an expensive drink ###################################",
     "type" : "COMESTIBLE",
     "id" : "yk_magnitude_drink",
     "name" : "magnitude dream",

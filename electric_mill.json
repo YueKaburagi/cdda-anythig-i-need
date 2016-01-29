@@ -17,22 +17,7 @@
     "turns_per_charge": 0,
     "ammo": "battery",
     "revert_to": "null"
-},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{ 
+},{ 
     "type" : "recipe",
     "result": "yk_electric_mill",
     "category": "CC_OTHER",
@@ -61,7 +46,14 @@
 	[ [ "sheet_metal", 1 ] ],
 	[ [ "motor", 1 ] ]
     ]
-},{
+},
+
+
+
+
+
+{
+    "//": "################################### food recipes ###################################",
     "type" : "recipe",
     "result": "flour",
     "id_suffix": "yk_by_electric_mill",
