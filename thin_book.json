@@ -1,0 +1,247 @@
+[{
+    "type": "snippet",
+    "category": "yk_thin_book_love",
+    "text": [
+	"Wow! I love it!",
+	"You gain satisfatcion!",
+	"Amazing it! it makes me happy, hehe...",
+	"Too funny! I'll read again",
+	"It tastes like alcohol. Care the dependence"
+    ]
+},{
+    "type": "snippet",
+    "category": "yk_thin_book_good",
+    "text": [
+	"It's poor, but not dislike",
+	"Hmm, it is so *interesting*",
+	"Need more *data*. Of cource, for science",
+	"I wanna read more. The author is still alive?"
+    ]
+},{
+    "type": "snippet",
+    "category": "yk_thin_book_notbad",
+    "text": [
+	"Written by the big name",
+	"Nothing interest"
+    ]
+},{
+    "type": "snippet",
+    "category": "yk_thin_book_bad",
+    "text": [
+	"Oops, Please label \"NSFW\" fo me",
+	"It anooys me",
+	"This is untouchable. You believed firmly"
+    ]
+},{
+    "type": "snippet",
+    "category": "yk_thin_book_worth",
+    "text": [
+	"Uh oh, anyone delete my memory?",
+	"F**k! How I read this!",
+	"You despaired"
+    ]
+},{
+    "type": "snippet",
+    "category": "yk_thin_book_any",
+    "text": [
+	"You know these authors!",
+	"This is a thick thin book. It's an anthology",
+	"Drawn about maids and their cultuers",
+	"A cover of \"How to plant. flowerpot edition\"",
+	"Written about lots of plantations",
+	"Introduces abandoned museums with few illustrations",
+	"Painted cloud of people at the metropolis"
+    ]
+},{
+    "type": "snippet",
+    "category": "yk_thin_book_oracle",
+    "text": [
+	"It gives you insanity idea",
+	"You gain new oracle",
+	"What!? It looks like a grimoire. I'm safe? I'm sanity?",
+	"\"A comes one from the space\"",
+	"Non titled book with odd material coverd",
+	"You know a transcendental truth",
+	"What am i?"
+    ]
+},,
+
+
+
+
+
+{
+    "//": "################################### thin book ###################################",
+    "type": "BOOK",
+    "id": "yk_thin_book_notbad",
+    "name": "thin book",
+    "symbol": "?",
+    "color": "light_cyan",
+    "snippet_category": "yk_thin_book_notbad",
+    "description": "A kind of funbook.",
+    "price": 500,
+    "intelligence": 0,
+    "time": 5,
+    "fun": 0,
+    "chapters": 0,
+    "skill": "none",
+    "max_level": 0,
+    "required_level": 0,
+    "material": "paper",
+    "weight": 50,
+    "volume": 1,
+    "to_hit": 0
+},{
+    "type": "BOOK",
+    "id": "yk_thin_book_common",
+    "name": "thin book",
+    "symbol": "?",
+    "color": "light_cyan",
+    "snippet_category": "yk_thin_book_any",
+    "description": "A kind of funbook.",
+    "price": 500,
+    "intelligence": 0,
+    "time": 3,
+    "fun": 1,
+    "chapters": 0,
+    "skill": "none",
+    "max_level": 0,
+    "required_level": 0,
+    "material": "paper",
+    "weight": 50,
+    "volume": 1,
+    "to_hit": 0
+},{
+    "type": "BOOK",
+    "id": "yk_thin_book_good",
+    "name": "thin book",
+    "symbol": "?",
+    "color": "light_cyan",
+    "snippet_category": "yk_thin_book_good",
+    "description": "A kind of funbook.",
+    "price": 500,
+    "intelligence": 0,
+    "time": 6,
+    "fun": 6,
+    "chapters": 0,
+    "skill": "none",
+    "max_level": 0,
+    "required_level": 0,
+    "material": "paper",
+    "weight": 50,
+    "volume": 1,
+    "to_hit": 0
+},{
+    "type": "BOOK",
+    "id": "yk_thin_book_love",
+    "name": "thin book",
+    "symbol": "?",
+    "color": "light_cyan",
+    "snippet_category": "yk_thin_book_love",
+    "description": "A kind of funbook.",
+    "price": 500,
+    "intelligence": 0,
+    "time": 7,
+    "fun": 18,
+    "chapters": 0,
+    "skill": "none",
+    "max_level": 0,
+    "required_level": 0,
+    "material": "paper",
+    "weight": 50,
+    "volume": 1,
+    "to_hit": 0
+},{
+    "type": "BOOK",
+    "id": "yk_thin_book_worth",
+    "name": "thin book",
+    "symbol": "?",
+    "color": "light_cyan",
+    "snippet_category": "yk_thin_book_worth",
+    "description": "A kind of funbook.",
+    "price": 500,
+    "intelligence": 0,
+    "time": 4,
+    "fun": -35,
+    "chapters": 0,
+    "skill": "none",
+    "max_level": 0,
+    "required_level": 0,
+    "material": "paper",
+    "weight": 50,
+    "volume": 1,
+    "to_hit": 0
+},{
+    "type": "BOOK",
+    "id": "yk_thin_book_bad",
+    "name": "thin book",
+    "symbol": "?",
+    "color": "light_cyan",
+    "snippet_category": "yk_thin_book_bad",
+    "description": "A kind of funbook.",
+    "price": 500,
+    "intelligence": 0,
+    "time": 3,
+    "fun": -9,
+    "chapters": 0,
+    "skill": "none",
+    "max_level": 0,
+    "required_level": 0,
+    "material": "paper",
+    "weight": 50,
+    "volume": 1,
+    "to_hit": 0
+},{
+    "type": "BOOK",
+    "id": "yk_thin_book_oracle",
+    "name": "thin book",
+    "symbol": "?",
+    "color": "light_cyan",
+    "snippet_category": "yk_thin_book_oracle",
+    "description": "A kind of funbook.",
+    "price": 2000,
+    "intelligence": 16,
+    "time": 20,
+    "fun": 10,
+    "chapters": 0,
+    "skill": "none",
+    "max_level": 0,
+    "required_level": 0,
+    "material": "paper",
+    "weight": 127,
+    "volume": 2,
+    "to_hit": 0,
+    "flags": "INSPIRATIONAL"
+},
+
+
+
+
+{
+    "//": "############################## set item spawn ##############################",
+    "type": "item_group",
+    "id": "homebooks",
+    "subtype": "distribution",
+    "items": [
+	["yk_thin_book_love", 2],
+	["yk_thin_book_good", 5],
+	["yk_thin_book_notbad", 10],
+	["yk_thin_book_common", 10],
+	["yk_thin_book_bad", 7],
+	["yk_thin_book_worth", 4],
+	["yk_thin_book_oracle", 1]
+    ]
+},{
+    "type": "item_group",
+    "id": "mansion_books",
+    "subtype": "distribution",
+    "items": [
+	["yk_thin_book_love", 3],
+	["yk_thin_book_good", 2],
+	["yk_thin_book_notbad", 1],
+	["yk_thin_book_common", 4],
+	["yk_thin_book_bad", 3],
+	["yk_thin_book_worth", 7],
+	["yk_thin_book_oracle", 3]
+    ]
+}]
