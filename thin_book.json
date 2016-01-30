@@ -1,68 +1,31 @@
 [{
     "type": "snippet",
-    "category": "yk_thin_book_love",
-    "text": [
-	"Wow! I love it!",
-	"You gain satisfatcion!",
-	"Amazing it! it makes me happy, hehe...",
-	"Too funny! I'll read again",
-	"It tastes like alcohol. Care the dependence"
-    ]
-},{
-    "type": "snippet",
-    "category": "yk_thin_book_good",
-    "text": [
-	"It's poor, but not dislike",
-	"Hmm, it is so *interesting*",
-	"Need more *data*. Of cource, for science",
-	"I wanna read more. The author is still alive?"
-    ]
-},{
-    "type": "snippet",
-    "category": "yk_thin_book_notbad",
-    "text": [
-	"Written by the big name",
-	"Nothing interest"
-    ]
-},{
-    "type": "snippet",
-    "category": "yk_thin_book_bad",
-    "text": [
-	"Oops, Please label \"NSFW\" fo me",
-	"It anooys me",
-	"This is untouchable. You believed firmly"
-    ]
-},{
-    "type": "snippet",
-    "category": "yk_thin_book_worth",
-    "text": [
-	"Uh oh, anyone delete my memory?",
-	"F**k! How I read this!",
-	"You despaired"
-    ]
-},{
-    "type": "snippet",
     "category": "yk_thin_book_any",
     "text": [
-	"You know these authors!",
 	"This is a thick thin book. It's an anthology",
 	"Drawn about maids and their cultuers",
-	"A cover of \"How to plant. flowerpot edition\"",
+	"\"How to plant! Flowerpot edition\"",
 	"Written about lots of plantations",
 	"Introduces abandoned museums with few illustrations",
-	"Painted cloud of people at the metropolis"
+	"Painted cloud of people on the metropolis",
+	"\"Stray cat\"",
+	"There is about grackens' life, lore, love, lair, and... everything!",
+	"\"Perfect assassination guide\"",
+	"\"Fragrant Flogs & Aromatic Ant\"",
+	"Explained why scientists are wondering about fungi"
     ]
 },{
     "type": "snippet",
     "category": "yk_thin_book_oracle",
     "text": [
-	"It gives you insanity idea",
-	"You gain new oracle",
-	"What!? It looks like a grimoire. I'm safe? I'm sanity?",
 	"\"A comes one from the space\"",
 	"Non titled book with odd material coverd",
-	"You know a transcendental truth",
-	"What am i?"
+	"\"The Legend of Panjandrum\"",
+	"An icky book. And, you may feel a heartbeat from it",
+	"\"The ways of terminate the earth\"",
+	"\"Underworld Livings\"",
+	"\"SZG YYY\"",
+	"The book radiate strange aroma, makes you wanna read it"
     ]
 },,
 
@@ -77,7 +40,7 @@
     "name": "thin book",
     "symbol": "?",
     "color": "light_cyan",
-    "snippet_category": "yk_thin_book_notbad",
+    "snippet_category": "yk_thin_book_any",
     "description": "A kind of funbook.",
     "price": 500,
     "intelligence": 0,
@@ -117,7 +80,7 @@
     "name": "thin book",
     "symbol": "?",
     "color": "light_cyan",
-    "snippet_category": "yk_thin_book_good",
+    "snippet_category": "yk_thin_book_any",
     "description": "A kind of funbook.",
     "price": 500,
     "intelligence": 0,
@@ -137,7 +100,7 @@
     "name": "thin book",
     "symbol": "?",
     "color": "light_cyan",
-    "snippet_category": "yk_thin_book_love",
+    "snippet_category": "yk_thin_book_any",
     "description": "A kind of funbook.",
     "price": 500,
     "intelligence": 0,
@@ -157,7 +120,7 @@
     "name": "thin book",
     "symbol": "?",
     "color": "light_cyan",
-    "snippet_category": "yk_thin_book_worth",
+    "snippet_category": "yk_thin_book_any",
     "description": "A kind of funbook.",
     "price": 500,
     "intelligence": 0,
@@ -177,7 +140,7 @@
     "name": "thin book",
     "symbol": "?",
     "color": "light_cyan",
-    "snippet_category": "yk_thin_book_bad",
+    "snippet_category": "yk_thin_book_any",
     "description": "A kind of funbook.",
     "price": 500,
     "intelligence": 0,
