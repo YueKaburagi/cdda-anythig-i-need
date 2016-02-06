@@ -125,4 +125,23 @@
     "autolearn": true,
     "tools": [ [["yk_electric_mill", 20] ]],
     "components": [ [ ["bone_tainted", 1] ] ]
+},
+
+
+
+
+{ "//": "######################################### chitin #########################################",
+    "type" : "recipe",
+    "result": "meal_chitin_piece",
+    "id_suffix": "yk_by_electric_mill",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skills_required": [["mechanics", 1]],
+    "skill_used": "cooking",
+    "difficulty": 1,
+    "time": 5000,
+    "reversible": false,
+    "autolearn": true,
+    "tools": [ [["yk_electric_mill", 20] ]],
+    "components": [ [ ["chitin_piece", 1] ] ]
 }]
