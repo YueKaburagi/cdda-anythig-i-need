@@ -4,9 +4,9 @@
     "type": "GENERIC",
     "symbol": ":",
     "color": "brown",
-    "description": "折り畳まれた燻製箱です。",
+    "description": "折り畳まれた使い捨ての燻製箱です。",
     "price": 30,
-    "material": "wood",
+    "material": "paper",
     "weight": 248,
     "volume": 1,
     "bashing": -2,
@@ -17,20 +17,19 @@
     "type": "GENERIC",
     "symbol": ":",
     "color": "brown",
-    "description": "肉を仕掛けた燻製箱です。中身を燻している最中です。",
+    "description": "肉を仕掛けた使い捨ての燻製箱です。中身を燻している最中です。",
     "price": 130,
-    "material": "wood",
+    "material": "paper",
     "weight": 1186,
     "volume": 3,
     "bashing": -2,
     "to_hit": -1,
     "use_action": {
 	"type": "delayed_transform",
-	"transform_age": 6000, "//": "10 hours",
+	"transform_age": 6000,
 	"not_ready_msg": "まだ煙が出ています！",
-	"msg": "燻製箱を開けて燻製肉を取り出しました。",
-	"moves": 50,
-	"container": "yk_smoke_unit_finished",
+	"msg": "燻製箱を壊して燻製肉を取り出しました。",
+	"moves": 150,
 	"target": "meat_smoked",
 	"target_charges": 3
     }
@@ -40,20 +39,19 @@
     "type": "GENERIC",
     "symbol": ":",
     "color": "brown",
-    "description": "人肉を仕掛けた燻製箱です。中身を燻している最中です。",
+    "description": "人肉を仕掛けた使い捨ての燻製箱です。中身を燻している最中です。",
     "price": 130,
-    "material": "wood",
+    "material": "paper",
     "weight": 1186,
     "volume": 3,
     "bashing": -2,
     "to_hit": -1,
     "use_action": {
 	"type": "delayed_transform",
-	"transform_age": 6000, "//": "10 hours",
+	"transform_age": 6000,
 	"not_ready_msg": "まだ煙が出ています！",
-	"msg": "燻製箱を開けて燻製人肉を取り出しました。",
-	"moves": 50,
-	"container": "yk_smoke_unit_finished",
+	"msg": "燻製箱を壊して燻製人肉を取り出しました。",
+	"moves": 150,
 	"target": "human_smoked",
 	"target_charges": 3
     }
@@ -63,42 +61,21 @@
     "type": "GENERIC",
     "symbol": ":",
     "color": "brown",
-    "description": "魚を仕掛けた燻製箱です。中身を燻している最中です。",
+    "description": "魚を仕掛けた使い捨ての燻製箱です。中身を燻している最中です。",
     "price": 130,
-    "material": "wood",
+    "material": "paper",
     "weight": 1186,
     "volume": 3,
     "bashing": -2,
     "to_hit": -1,
     "use_action": {
 	"type": "delayed_transform",
-	"transform_age": 6000, "//": "10 hours",
+	"transform_age": 6000,
 	"not_ready_msg": "まだ煙が出ています！",
-	"msg": "燻製箱を開けて燻製魚を取り出しました。",
-	"moves": 50,
-	"container": "yk_smoke_unit_finished",
+	"msg": "燻製箱を壊して燻製魚を取り出しました。",
+	"moves": 150,
 	"target": "fish_smoked",
 	"target_charges": 6
-    }
-},{
-    "id": "yk_smoke_unit_finished",
-    "name": "smoking unit",
-    "type": "CONTAINER",
-    "symbol": ":",
-    "color": "brown",
-    "description": "燻製に使った燻製箱です。中身を取り出したら畳んで仕舞っておきましょう。",
-    "price": 140,
-    "material": "wood",
-    "weight": 248,
-    "volume": 3,
-    "bashing": -2,
-    "to_hit": -1,
-    "contains": 3,
-    "rigid": true,
-    "use_action": {
-	"type": "transform",
-	"msg": "燻製箱を畳みました。",
-	"target": "yk_smoke_unit"
     }
 },
 
@@ -122,8 +99,8 @@
 	{"id":"CUT","level":1,"amount":1}
     ],
     "components": [
-	[["2x4", 2], ["stick", 2], ["box_small", 1] ],
-	[["string_36", 2], ["duct_tape", 20], ["rag", 4], ["leather", 4] ]
+	[["box_small", 1] ],
+	[["string_36", 1], ["duct_tape", 10], ["rag", 2], ["leather", 2] ]
     ]
 },{
     "type" : "recipe",
@@ -142,7 +119,7 @@
 	[["lighter", 1], ["crude_firestarter", 1], ["matches", 1], ["ref_lighter", 1] ]
     ],
     "components": [
-	[["yk_smoke_unit", 1], ["yk_smoke_unit_finished", 1] ],
+	[["yk_smoke_unit", 1] ],
 	[["charcoal", 2] ],
 	[["meat", 3] ],
 	[["skewer", 3], ["skewer_bone", 3] ]
@@ -164,7 +141,7 @@
 	[["lighter", 1], ["crude_firestarter", 1], ["matches", 1], ["ref_lighter", 1] ]
     ],
     "components": [
-	[["yk_smoke_unit", 1], ["yk_smoke_unit_finished", 1] ],
+	[["yk_smoke_unit", 1] ],
 	[["charcoal", 2] ],
 	[["human_flesh", 3] ],
 	[["skewer", 3], ["skewer_bone", 3] ]
@@ -186,7 +163,7 @@
 	[["lighter", 1], ["crude_firestarter", 1], ["matches", 1], ["ref_lighter", 1] ]
     ],
     "components": [
-	[["yk_smoke_unit", 1], ["yk_smoke_unit_finished", 1] ],
+	[["yk_smoke_unit", 1] ], 
 	[["charcoal", 2] ],
 	[["fish", 6] ],
 	[["skewer", 3], ["skewer_bone", 3] ]
