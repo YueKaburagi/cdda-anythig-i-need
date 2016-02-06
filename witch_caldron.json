@@ -325,7 +325,7 @@
 	[["bum_wine", 2]], 
 	[["dandelion_wine", 1], ["pine_wine", 1]],
 	[["fruit_wine", 1]],
-	[["irish_coffee", 1]],
+	[["irish_coffee", 1], ["coffee_syrup", 1]],
 	[["drink_strawberry_surprise", 1]],
 	[["drink_boozeberry", 1]],
 	[["drink_screwdriver", 1]],
