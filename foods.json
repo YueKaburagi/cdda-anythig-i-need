@@ -1,0 +1,84 @@
+[{
+    "type" : "COMESTIBLE",
+    "id" : "yk_sandwich_meat_and_sauce",
+    "name" : "meat&sauce sandwich",
+    "weight" : 202,
+    "color" : "light_gray",
+    "addiction_type" : "none",
+    "spoils_in" : 42,
+    "stim" : 0,
+    "container" : "wrapper",
+    "comestible_type" : "FOOD",
+    "symbol" : "%",
+    "quench" : 1,
+    "healthy" : 0,
+    "addiction_potential" : 0,
+    "nutrition" : 46,
+    "description" : "お肉とソースでちょっと贅沢になったサンドイッチです",
+    "price" : 1100,
+    "material" : ["flesh", "wheat"],
+    "tool" : "null",
+    "volume" : 1,
+    "charges" : 3,
+    "fun" : 4
+},{
+    "type" : "recipe",
+    "result": "yk_sandwich_meat_and_sauce",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_MEAT",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": 4000,
+    "reversible": true,
+    "autolearn": true,
+    "qualities" : [
+	{"id":"CUT","level":1,"amount":1}
+    ],
+    "components": [
+	[
+	    [ "flatbread", 2 ],
+	    [ "bread", 2 ],
+	    [ "cornbread", 2 ],
+	    [ "wastebread", 2 ]
+	],
+	[
+	    [ "meat_cooked", 1 ],
+	    [ "lunchmeat", 4 ],
+	    [ "bologna", 5 ]
+	],
+	[
+	    [ "mayonnaise", 1 ],
+	    [ "ketchup", 1 ],
+	    [ "sauce_pesto", 1 ],
+	    [ "sauce_red", 1 ],
+	    [ "mustard", 1 ],
+	    [ "honeycomb", 1 ],
+	    [ "honey_bottled", 1 ],
+	    [ "honey_glassed", 1 ]
+	]
+    ]
+},{
+    "type" : "recipe",
+    "result": "yk_sandwich_meat_and_sauce",
+    "id_suffix": "yk_from_sw_t",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_MEAT",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": 1000,
+    "reversible": true,
+    "autolearn": true,
+    "components": [
+	[["sandwich_t", 3] ],
+	[
+	    [ "mayonnaise", 1 ],
+	    [ "ketchup", 1 ],
+	    [ "sauce_pesto", 1 ],
+	    [ "sauce_red", 1 ],
+	    [ "mustard", 1 ],
+	    [ "honeycomb", 1 ],
+	    [ "honey_bottled", 1 ],
+	    [ "honey_glassed", 1 ]
+	]
+    ]
+}]
