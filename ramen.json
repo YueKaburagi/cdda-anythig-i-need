@@ -28,7 +28,7 @@
     "subcategory": "CSC_FOOD_PASTA",
     "skill_used": "cooking",
     "difficulty": 2,
-    "time": 40000,
+    "time": 50000,
     "batch_time_factors": [88, 2],
     "reversible": false,
     "autolearn": true,
@@ -97,6 +97,65 @@
 	[
 	    [ "noodles_fast", 1], ["yk_ramen_raw", 1]
 	],
+	[
+	    [ "salt", 1 ],
+	    [ "soysauce", 1 ],
+	    [ "seasoning_salt", 10 ]
+	],
+	[
+	    [ "broth", 1 ],
+	    [ "broth_bone", 1 ]
+	]
+    ]
+},{
+    "type" : "COMESTIBLE",
+    "id" : "yk_ramen_chashu",
+    "name" : "chashumen",
+    "weight" : 352,
+    "color" : "light_gray",
+    "addiction_type" : "none",
+    "spoils_in" : 120,
+    "stim" : 0,
+    "container" : "can_food",
+    "comestible_type" : "DRINK",
+    "symbol" : "~",
+    "quench" : 2,
+    "healthy" : 0,
+    "addiction_potential" : 0,
+    "nutrition" : 38,
+    "description" : "薄切り燻製肉をトッピングした、手作りのチャーシューメンです。",
+    "price" : 210,
+    "material" : "wheat",
+    "volume" : 1,
+    "phase" : "liquid",
+    "charges" : 2,
+    "flags" : ["EATEN_HOT", "USE_EAT_VERB"],
+    "fun" : 2
+},{
+    "type" : "recipe",
+    "result": "yk_ramen_chashu",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_PASTA",
+    "skill_used": "cooking",
+    "difficulty": 2,
+    "time": 11000,
+    "reversible": false,
+    "autolearn": true,
+    "qualities":[
+	{"id":"COOK","level":2,"amount":1},
+	{"id":"BOIL","level":1,"amount":1},
+	{"id":"CUT","level":1,"amount":1}
+    ], "tools": [
+	[
+	    [ "hotplate", 4 ],
+	    [ "char_smoker", 1 ],
+	    [ "toolset", 4 ],
+	    [ "fire", -1 ]
+	]
+    ],
+    "components": [
+	[["noodles_fast", 1], ["yk_ramen_raw", 1] ],
+	[["meat_smoked", 1] ],
 	[
 	    [ "salt", 1 ],
 	    [ "soysauce", 1 ],
